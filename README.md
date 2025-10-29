@@ -3,6 +3,9 @@ Objetivo: El objetivo de la página web es hablar de distintos animes para dar i
 
 Contenidos:
 Tema: Que es el anime y explicación de diversos animes.
+
 Público Objetivo: La web sería para mayores de 16 años
+
 Paleta de colores y tipografía: Colores que más se van a usar -> Rojo (y variantes) Amarillo (y variantes) Naranja, Marrones y Verdes.
+
 La estructura inicial será: Página inicial hablando del anime en general que lleva con enlaces a otras páginas las cuales tiene los distintos animes para ser explicados y valorados individualmente, además de una página de contacto.
