@@ -1,5 +1,5 @@
 La página web estará inspirada en el mundo del dibujo japonés o anime, será una página en la que se hable individualmente de cada anime, asi como poner valoraciones o comentarios de los siguientes animes:
-Attack On Titan, Kimetsu No Yaiba, Assasination Classroom, Naruto, 7 Deadly Sins, Boku No Hero, Jujutsu Kaisen, Death Note, Dragon Ball (Súper incluído), Haikyu!!!, Los 4 Jinetes del apocalipsis y Dragones y Mazmorras
+Attack On Titan, Kimetsu No Yaiba, Assasination Classroom, Naruto, The 7 Deadly Sins, Boku No Hero, Jujutsu Kaisen, Death Note, Dragon Ball (Súper incluído), Haikyu!!!, Los 4 Jinetes del apocalipsis y Dragones y Mazmorras
 
 Va a estar diseñada para un público mayor de 16 años ya que hay series que pueden presentar violencia o lenguaje malsonante.
 
