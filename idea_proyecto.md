@@ -3,6 +3,9 @@ Attack On Titan, Kimetsu No Yaiba, Assasination Classroom, Naruto, The 7 Deadly 
 
 Va a estar diseñada para un público mayor de 16 años ya que hay series que pueden presentar violencia o lenguaje malsonante.
 
-La paleta de colores y la tipografía van a cambiar dependiendo del anime, es decir, Naruto no va a tener los mismos colores o la misma tipografía que Boku No Hero, serán usados colores como Amarillo, Rojo, Verde, Negro... y sus variantes.
+La edad a la que esta dirigida el diseño de la web esta entre los 16 a 30 años, ya que el contenido de las series suele ser visto por adultos jóvenes, además de que varias de las series que pondremos tendrán un contenido absurdo, de fantasía o trágico. Por ello se hará la web llamativa y con muchas imágenes, para atraer más al espectador.
+
+La paleta de colores y la tipografía van a cambiar dependiendo del anime, es decir, Naruto no va a tener los mismos colores o la misma tipografía que Boku No Hero, serán usados colores como <span style="Color:#ffff00;">Amarillo</span>
+Naranja, Amarillo, Rojo, Verde, Negro... y sus variantes.
 
 En cuanto a la estructura diseñaremos una página principal en la cual se hablará del anime en general, podrás loguearte y será la encargada de tener el índice con todas las series de las que vamos a hablar, por cada anime habrá un enlace el cual te llevará a su propia página en la que se hablara de su historia, personajes... y tambien se podra comentar en el o valorar para saber lo que piensas de la serie.
