@@ -1,23 +1,31 @@
-/* RESET BÁSICO */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
-    margin: 0;
+    background-color: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
-/* CABECERA */
+/* HEADER */
 header {
-    background-color: #ff3c00;
-    color: white;
+    background: #202020;
     text-align: center;
+    padding: 20px 0;
+    position: static; /* No sticky */
 }
 
-header h1 {
-    margin: 0;
-    padding: 15px 0 5px 0;
-    font-size: 2em;
+.logo {
+    font-size: 3rem;
+    color: #ff3c00; /* rojo */
+    margin-bottom: 10px;
 }
+
 
 /* BARRA DE NAVEGACIÓN */
 nav {
