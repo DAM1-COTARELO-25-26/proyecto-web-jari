@@ -96,29 +96,35 @@ nav {
     font-size: 1.1rem;
 }
 
-/* CONTENIDO PRINCIPAL */
-main {
-    padding: 20px;
-}
-
-.presentacion {
-    background-color: #ffe5dc;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-ul {
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-/* PIE DE PÁGINA */
+/* FOOTER */
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    margin-top: 30px;
+    background: #202020;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .anime-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .anime-section.reverse {
+        flex-direction: column;
+    }
+    .anime-section img,
+    .anime-info {
+        width: 100%;
+    }
+
+    /* Menú más compacto */
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
 }
