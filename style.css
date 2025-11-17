@@ -96,6 +96,41 @@ nav {
     font-size: 1.1rem;
 }
 
+/* ANIME SECTIONS */
+.anime-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.anime-section.reverse {
+    flex-direction: row-reverse;
+    background-color: #181818;
+}
+
+.anime-section img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.anime-section img:hover {
+    transform: scale(1.05);
+}
+
+.anime-info {
+    width: 50%;
+}
+
+.anime-info h3 {
+    color: #ff3c00; /* rojo */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
