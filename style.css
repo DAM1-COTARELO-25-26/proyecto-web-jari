@@ -29,31 +29,71 @@ header {
 
 /* BARRA DE NAVEGACIÓN */
 nav {
-    background-color: #e03a00; /* barra visible debajo del título */
-    padding: 10px 0;
+    background: #181818;
+    padding: 12px 0;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center; /* centra los enlaces */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 2 filas permitidas */
+    
+    /* 🔥 Ajustes que aseguran 2 filas */
+    gap: 15px 25px;  /* vertical - horizontal */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav a {
-    color: rgb(20, 6, 6); /* texto visible */
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-weight: 600;
+    font-size: 1.15rem; /* texto grande */
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    color: #ff3c00; /* rojo */
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #222, #111);
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #ff3c00; /* rojo */
+    margin-bottom: 15px;
+}
+
+/* SECCIÓN GRUPO JARI */
+.grupo-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #111, #1a1a1a);
+    border-bottom: 1px solid #222;
+}
+
+.grupo-section h2 {
+    color: #ff3c00; /* rojo */
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.grupo-section .subtitulo {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.grupo-section p {
+    color: #ddd;
+    margin-top: 5px;
+    font-size: 1.1rem;
 }
 
 /* CONTENIDO PRINCIPAL */
