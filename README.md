@@ -9,3 +9,19 @@ Público Objetivo: La web sería para mayores de 16 años
 Paleta de colores y tipografía: Colores que más se van a usar -> Rojo (y variantes) Amarillo (y variantes) Naranja, Marrones y Verdes.
 
 La estructura inicial será: Página inicial hablando del anime en general que lleva con enlaces a otras páginas las cuales tiene los distintos animes para ser explicados y valorados individualmente, además de una página de contacto.
+
+Mapa de sitio:
+JARI (Sitio web)
+│
+├── index.html  (Inicio)
+│   ├─ Presentación del grupo
+│   ├─ Bienvenida
+│   ├─ Animes destacados (lista)
+│   └─ Sobre el anime (artículo)
+│
+├── seccion.html  (Animes)
+│   ├─ Lista de animes populares (tabla)
+│   └─ Curiosidad sobre manga y anime (artículo)
+│
+└── contacto.html  (Contacto)
+    └─ Formulario de contacto
