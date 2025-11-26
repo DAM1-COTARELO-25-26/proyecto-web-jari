@@ -43,7 +43,7 @@ body {
 }
 
 .foto-arriba img {
-    width: 140px;               /* Tamaño pequeño */
+    width: 140px;
     height: auto;
     border-radius: 10px;
     cursor: pointer;
@@ -53,7 +53,7 @@ body {
 
 .foto-arriba img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 60, 0, 0.7); /* Glow naranja estilo JARI */
+    box-shadow: 0 0 25px rgba(255, 60, 0, 0.7);
 }
 
 /* --- SECCIÓN JARI --- */
@@ -62,11 +62,25 @@ body {
     padding: 40px 20px;
     background: linear-gradient(to bottom, #111, #181818);
     border-top: 1px solid #222;
+
+    /* Márgenes laterales y centrado */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Títulos dentro de la sección */
+.jari-section h2 {
+    color: #ff3c00;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* --- TABLA ESTILO JARI (OSCURO + NARANJA + DORADO) --- */
 .anime-table {
     width: 100%;
+    max-width: 1000px;      /* Limita ancho de la tabla */
+    margin: 0 auto;          /* Centra horizontalmente */
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
@@ -134,7 +148,8 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255,60,0,0.7);
 }
-/*FOOTER*/
+
+/* --- FOOTER --- */
 footer {
     text-align: center;
     background: #202020;
@@ -142,6 +157,12 @@ footer {
     color: #888;
     font-size: 0.9rem;
 }
+
+.anime-info-page h2:nth-of-type(2) {
+    text-align: center;
+    margin-bottom: 20px; /* separa el título de la tabla */
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     .anime-table {
@@ -152,3 +173,4 @@ footer {
         width: 100px;
     }
 }
+    
