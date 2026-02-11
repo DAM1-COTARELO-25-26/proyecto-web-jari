@@ -1,4 +1,4 @@
-/* 1. RESET Y ESTILOS BASE */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,144 +10,281 @@ body {
     background-color: #111;
     color: #f5f5f5;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-/* 2. MENÚ LATERAL Y LOGO */
-   #menu-toggle { display: none; }
-
-   /* Botón Logo */
-   .logo-button {
-       cursor: pointer;
-       display: inline-flex;
-       align-items: center;
-       justify-content: center;
-       width: 90px;
-       height: 90px;
-       background: #000;
-       position: fixed;
-       top: 0;
-       left: 0;
-       z-index: 2001;
-       border: none;
-       box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-   }
-   
-   .logo-img {
-       width: 65px;
-       height: 65px;
-       border-radius: 50%;
-       transition: transform 0.3s;
-       object-fit: cover;
-   }
-   
-   .logo-img:hover { transform: scale(1.05); }
-   
-   /* Menú Lateral */
-   .side-menu {
-       position: fixed;
-       top: 0;
-       left: 0;
-       height: 100%;
-       width: 280px;
-       background: #000;
-       box-shadow: 2px 0 15px rgba(0, 0, 0, 0.8);
-       transform: translateX(-100%);
-       transition: transform 0.3s ease-in-out;
-       z-index: 1999;
-       padding-top: 100px;
-   }
-   
-   #menu-toggle:checked ~ .side-menu { transform: translateX(0); }
-   
-   .side-menu .nav-links {
-       list-style: none;
-       display: flex;
-       flex-direction: column;
-       padding: 20px;
-       gap: 20px;
-   }
-   
-   .side-menu .nav-links a {
-       color: #FFD700;
-       text-decoration: none;
-       font-weight: 600;
-       font-size: 1.2rem;
-       transition: color 0.3s;
-   }
-   
-   .side-menu .nav-links a:hover { color: #ff3c00; }
-
-   /* 3. ESTRUCTURA PRINCIPAL (LAYOUT) */
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px 40px 110px; /* 110px izquierda para el logo */
+/* HEADER */
+header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 2000;
 }
 
-/* Sección Superior */
-.top-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    margin-bottom: 50px;
-    background: #181818;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #222;
+#menu-toggle {
+    display: none;
 }
 
-.info-left { display: flex; flex-direction: column; gap: 20px; }
-
-.anime-title {
-    font-size: 2.5rem;
-    color: #ff3c00;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+/* BOTÓN LOGO */
+.logo-button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+    border: none;
 }
 
-.synopsis-box {
-    background: #111;
-    padding: 20px;
-    border: 1px dashed #444;
-    border-radius: 5px;
+.logo-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* MENÚ LATERAL */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
-    color: #ccc;
+    width: 280px;
+    background: #000;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.8);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1999;
+    overflow-y: auto;
 }
 
-.info-right { display: flex; flex-direction: column; gap: 20px; }
+/* Scrollbar personalizada */
+.side-menu::-webkit-scrollbar { width: 8px; }
+.side-menu::-webkit-scrollbar-track { background: #111; }
+.side-menu::-webkit-scrollbar-thumb { background: #ff3c00; border-radius: 4px; }
+.side-menu::-webkit-scrollbar-thumb:hover { background: #ff5c1a; }
 
-.anime-image-container {
-    width: 100%;
-    height: 300px;
-    background: #000;
-    border: 1px solid #333;
+#menu-toggle:checked ~ .side-menu {
+    transform: translateX(0);
+}
+
+.side-menu .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 20px 20px;
+    gap: 20px;
+}
+
+.side-menu .nav-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.side-menu .nav-links a:hover {
+    color: #ff3c00;
+}
+
+/* TOP NAV */
+.top-nav {
+    background: #181818;
+    min-height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    border-radius: 5px;
+    padding-left: 90px;
+    padding-right: 20px;
 }
 
-.anime-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.data-box {
-    background: #111;
-    padding: 15px;
-    border: 1px solid #ff3c00;
-    border-radius: 5px;
-}
-
-.data-row {
+.top-links {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #333;
-    padding: 8px 0;
+    flex-wrap: wrap;
+    gap: 5px 25px;
+}
+
+.top-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.top-links a:hover {
+    color: #ff3c00;
+}
+
+/* SECCIONES GENERALES */
+.intro,
+.grupo-section,
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #111, #1a1a1a);
+    border-bottom: 1px solid #222;
+}
+
+/* INTRO */
+.intro h2 {
+    font-size: 2rem;
+    color: #ff3c00;
+    margin-bottom: 15px;
+}
+
+/* GRUPO */
+.grupo-section h2 {
+    color: #ff3c00;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.grupo-section .subtitulo {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.grupo-section p {
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+/* SECCIONES ANIME */
+.anime-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 40px;
+    border-bottom: 1px solid #222;
+}
+
+.anime-section:nth-of-type(odd) {
+    background: #111;
+}
+
+.anime-section:nth-of-type(even) {
+    background: #0f0f0f;
+    flex-direction: row-reverse;
+}
+
+.anime-section img {
+    width: 55%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+
+.anime-section img:hover {
+    transform: scale(1.02);
+}
+
+.anime-info {
+    width: 35%;
+    max-width: 600px;
+}
+
+.anime-info h3 {
+    color: #ff3c00;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.anime-info p {
+    color: #ccc;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* CONTACTO (solo lo específico) */
+.contact-section h2 {
+    color: #ff3c00;
+    margin-bottom: 15px;
+}
+er {
+    text-align: center;
+    background: #202020;
+    padding: 20px;
+    color: #888;
     font-size: 0.9rem;
 }
-.data-row:last-child { border-bottom: none; }
-.data-label { color: #FFD700; font-weight: bold; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .anime-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anime-section img,
+    .anime-info {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+.contact-section p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #202020;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .anime-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anime-section img,
+    .anime-info {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
