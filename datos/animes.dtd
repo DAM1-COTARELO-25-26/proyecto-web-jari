@@ -1,0 +1,45 @@
+<!ELEMENT catalogoAnimes (anime+)>
+<!ATTLIST catalogoAnimes
+    fechaRegistro CDATA #REQUIRED
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+>
+
+<!ELEMENT anime (titulo, sinopsis, fechaPublicacion, fechaFin?, destacado, rating, generos, temporadas, personajes)>
+<!ATTLIST anime
+    id ID #REQUIRED
+    estado (emision | finalizado | cancelado) #REQUIRED
+    tipo (TV | Movie | OVA) #REQUIRED
+>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT fechaPublicacion (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+<!ELEMENT destacado (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+
+<!ELEMENT generos (genero+)>
+<!ELEMENT genero (#PCDATA)>
+
+<!ELEMENT temporadas (temporada+)>
+<!ATTLIST temporadas
+    total CDATA #REQUIRED
+>
+
+<!ELEMENT temporada (episodios, fechaEstreno)>
+<!ATTLIST temporada
+    numero CDATA #REQUIRED
+>
+
+<!ELEMENT episodios (#PCDATA)>
+<!ELEMENT fechaEstreno (#PCDATA)>
+
+<!ELEMENT personajes (principales, secundarios, villanos)>
+<!ELEMENT principales (protagonista+)>
+<!ELEMENT secundarios (coprotagonista+)>
+<!ELEMENT villanos (antagonista+)>
+
+<!ELEMENT protagonista (#PCDATA)>
+<!ELEMENT coprotagonista (#PCDATA)>
+<!ELEMENT antagonista (#PCDATA)>
