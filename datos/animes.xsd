@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="animeIDType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="A[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="estadoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="emision"/>
+            <xs:enumeration value="finalizado"/>
+            <xs:enumeration value="cancelado"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAnimeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="TV"/>
+            <xs:enumeration value="Movie"/>
+            <xs:enumeration value="OVA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ratingType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="10"/>
+            <xs:fractionDigits value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="textoLargoType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="600"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="catalogoAnimes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="anime" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="xs:string"/>
+                            <xs:element name="sinopsis" type="textoLargoType"/>
+                            <xs:element name="fechaPublicacion" type="xs:date"/>
+                            <xs:element name="fechaFin" type="xs:date" minOccurs="0"/>
+                            <xs:element name="destacado" type="xs:boolean"/>
+                            <xs:element name="rating" type="ratingType"/>
+
+                            <xs:element name="generos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="genero" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="temporadas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="temporada" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="episodios" type="xs:positiveInteger"/>
+                                                    <xs:element name="fechaEstreno" type="xs:date"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="numero" type="xs:positiveInteger" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="total" type="xs:positiveInteger" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="personajes">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="principales">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="protagonista" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="secundarios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="coprotagonista" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="villanos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="antagonista" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="id" type="animeIDType" use="required"/>
+                        <xs:attribute name="estado" type="estadoType" use="required"/>
+                        <xs:attribute name="tipo" type="tipoAnimeType" use="required"/>
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="fechaRegistro" type="xs:date" use="required"/>
+
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
