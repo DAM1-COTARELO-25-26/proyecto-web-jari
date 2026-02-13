@@ -6,52 +6,582 @@
     fechaRegistro="2026-02-13">
 
     <anime id="A001" estado="finalizado" tipo="TV">
-        <titulo></titulo>
-        <sinopsis></sinopsis>
-        <fechaPublicacion></fechaPublicacion>
-        <fechaFin></fechaFin>
-        <destacado></destacado>
-        <rating></rating>
+        <titulo>Naruto</titulo>
+        <sinopsis>Naruto Uzumaki es un niño marginado en la aldea de Konoha que alberga en su interior al Zorro de Nueve Colas. Su sueño es convertirse en Hokage, el líder de la aldea, para ganar el respeto de todos. A través de exámenes ninja y misiones peligrosas, descubre el valor de la amistad y el trabajo duro.</sinopsis>
+        <fechaPublicacion>2002-10-03</fechaPublicacion>
+        <fechaFin>2007-02-08</fechaFin>
+        <destacado>true</destacado>
+        <rating>8.3</rating>
         <generos>
-            <genero></genero>
-            <genero></genero>
-            <genero></genero>
+            <genero>Acción</genero>
+            <genero>Aventura</genero>
+            <genero>Shonen</genero>
         </generos>
-        <temporadas total="">
+        <temporadas total="5">
             <temporada numero="1">
-                <episodios></episodios>
-                <fechaEstreno></fechaEstreno>
+                <episodios>57</episodios>
+                <fechaEstreno>2002-10-03</fechaEstreno>
             </temporada>
             <temporada numero="2">
-                <episodios></episodios>
-                <fechaEstreno></fechaEstreno>
+                <episodios>43</episodios>
+                <fechaEstreno>2003-11-05</fechaEstreno>
             </temporada>
             <temporada numero="3">
-                <episodios></episodios>
-                <fechaEstreno></fechaEstreno>
+                <episodios>41</episodios>
+                <fechaEstreno>2004-09-08</fechaEstreno>
             </temporada>
             <temporada numero="4">
-                <episodios></episodios>
-                <fechaEstreno></fechaEstreno>
+                <episodios>42</episodios>
+                <fechaEstreno>2005-07-06</fechaEstreno>
             </temporada>
             <temporada numero="5">
-                <episodios></episodios>
-                <fechaEstreno></fechaEstreno>
+                <episodios>37</episodios>
+                <fechaEstreno>2006-05-03</fechaEstreno>
             </temporada>
         </temporadas>
         <personajes>
             <principales>
-                <protagonista></protagonista>
+                <protagonista>Naruto Uzumaki</protagonista>
             </principales>
             <secundarios>
-                <coprotagonista></coprotagonista>
-                <coprotagonista></coprotagonista>
-                <coprotagonista></coprotagonista>
+                <coprotagonista>Sasuke Uchiha</coprotagonista>
+                <coprotagonista>Sakura Haruno</coprotagonista>
+                <coprotagonista>Kakashi Hatake</coprotagonista>
             </secundarios>
             <villanos>
-                <antagonista></antagonista>
-                <antagonista></antagonista>
-                <antagonista></antagonista>
+                <antagonista>Orochimaru</antagonista>
+                <antagonista>Itachi Uchiha</antagonista>
+                <antagonista>Gaara</antagonista>
             </villanos>
         </personajes>
     </anime>
+
+    <anime id="A002" estado="finalizado" tipo="TV">
+        <titulo>Assassination Classroom</titulo>
+        <sinopsis>Una misteriosa criatura con tentáculos destruye la luna y amenaza con hacer lo mismo con la Tierra. Sin embargo, ofrece una oportunidad: se convierte en el profesor de la clase 3-E, donde los estudiantes deben intentar asesinarlo antes de la graduación para salvar el mundo y ganar una recompensa.</sinopsis>
+        <fechaPublicacion>2015-01-10</fechaPublicacion>
+        <fechaFin>2016-06-20</fechaFin>
+        <destacado>false</destacado>
+        <rating>8.0</rating>
+        <generos>
+            <genero>Comedia</genero>
+            <genero>Acción</genero>
+            <genero>Escolar</genero>
+        </generos>
+        <temporadas total="2">
+            <temporada numero="1">
+                <episodios>22</episodios>
+                <fechaEstreno>2015-01-10</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>25</episodios>
+                <fechaEstreno>2016-01-07</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Koro-sensei</protagonista>
+                <protagonista>Nagisa Shiota</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Karma Akabane</coprotagonista>
+                <coprotagonista>Kaede Kayano</coprotagonista>
+                <coprotagonista>Tadaomi Karasuma</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Gakuho Asano</antagonista>
+                <antagonista>Shiro</antagonista>
+                <antagonista>Akira Takaoka</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A003" estado="finalizado" tipo="TV">
+        <titulo>Attack on Titan</titulo>
+        <sinopsis>Tras ver a su madre ser devorada por un titán, Eren Yeager jura eliminar a todos los gigantes de la faz de la tierra. Se une al Cuerpo de Exploración, la élite militar que lucha fuera de los muros, descubriendo oscuros secretos sobre el origen de los titanes y la historia de la humanidad.</sinopsis>
+        <fechaPublicacion>2013-04-07</fechaPublicacion>
+        <fechaFin>2023-11-05</fechaFin>
+        <destacado>true</destacado>
+        <rating>9.1</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Drama</genero>
+            <genero>Fantasía</genero>
+        </generos>
+        <temporadas total="4">
+            <temporada numero="1">
+                <episodios>25</episodios>
+                <fechaEstreno>2013-04-07</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>12</episodios>
+                <fechaEstreno>2017-04-01</fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios>22</episodios>
+                <fechaEstreno>2018-07-23</fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios>35</episodios>
+                <fechaEstreno>2020-12-07</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Eren Yeager</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Mikasa Ackerman</coprotagonista>
+                <coprotagonista>Armin Arlert</coprotagonista>
+                <coprotagonista>Levi Ackerman</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Reiner Braun</antagonista>
+                <antagonista>Bertholdt Hoover</antagonista>
+                <antagonista>Zeke Yeager</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A004" estado="emision" tipo="TV">
+        <titulo>Demon Slayer</titulo>
+        <sinopsis>Tanjiro Kamado regresa a casa para encontrar a su familia masacrada por un demonio. Su única superviviente, su hermana Nezuko, se ha transformado en uno. Tanjiro se convierte en cazador de demonios para encontrar una cura y vengar a su familia, enfrentándose a las Doce Lunas Demoníacas.</sinopsis>
+        <fechaPublicacion>2019-04-06</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>8.7</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Sobrenatural</genero>
+        </generos>
+        <temporadas total="4">
+            <temporada numero="1">
+                <episodios>26</episodios>
+                <fechaEstreno>2019-04-06</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>18</episodios>
+                <fechaEstreno>2021-10-10</fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios>11</episodios>
+                <fechaEstreno>2023-04-09</fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios>8</episodios>
+                <fechaEstreno>2024-05-12</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Tanjiro Kamado</protagonista>
+                <protagonista>Nezuko Kamado</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Zenitsu Agatsuma</coprotagonista>
+                <coprotagonista>Inosuke Hashibira</coprotagonista>
+                <coprotagonista>Giyu Tomioka</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Muzan Kibutsuji</antagonista>
+                <antagonista>Akaza</antagonista>
+                <antagonista>Doma</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A005" estado="finalizado" tipo="TV">
+        <titulo>Seven Deadly Sins</titulo>
+        <sinopsis>La princesa Elizabeth busca a los Siete Pecados Capitales, un grupo de antiguos caballeros acusados de traición, para que la ayuden a salvar el reino de los Caballeros Sagrados que han dado un golpe de estado. Liderados por Meliodas, luchan contra demonios y revelan su pasado.</sinopsis>
+        <fechaPublicacion>2014-10-05</fechaPublicacion>
+        <fechaFin>2021-06-23</fechaFin>
+        <destacado>false</destacado>
+        <rating>7.9</rating>
+        <generos>
+            <genero>Fantasía</genero>
+            <genero>Aventura</genero>
+        </generos>
+        <temporadas total="4">
+            <temporada numero="1">
+                <episodios>24</episodios>
+                <fechaEstreno>2014-10-05</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>24</episodios>
+                <fechaEstreno>2018-01-13</fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios>24</episodios>
+                <fechaEstreno>2019-10-09</fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios>24</episodios>
+                <fechaEstreno>2021-01-13</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Meliodas</protagonista>
+                <protagonista>Elizabeth Liones</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Ban</coprotagonista>
+                <coprotagonista>King</coprotagonista>
+                <coprotagonista>Diane</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Rey Demonio</antagonista>
+                <antagonista>Hendrickson</antagonista>
+                <antagonista>Estarossa</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A006" estado="emision" tipo="TV">
+        <titulo>Jujutsu Kaisen</titulo>
+        <sinopsis>Yuji Itadori traga un dedo maldito para salvar a sus amigos y se convierte en el recipiente de Ryomen Sukuna, el rey de las maldiciones. Bajo la tutela de Gojo Satoru, entra en la escuela de hechicería para encontrar los dedos restantes y exorcizar a Sukuna para siempre.</sinopsis>
+        <fechaPublicacion>2020-10-03</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>8.8</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Sobrenatural</genero>
+        </generos>
+        <temporadas total="2">
+            <temporada numero="1">
+                <episodios>24</episodios>
+                <fechaEstreno>2020-10-03</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>23</episodios>
+                <fechaEstreno>2023-07-06</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Yuji Itadori</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Megumi Fushiguro</coprotagonista>
+                <coprotagonista>Nobara Kugisaki</coprotagonista>
+                <coprotagonista>Satoru Gojo</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Ryomen Sukuna</antagonista>
+                <antagonista>Mahito</antagonista>
+                <antagonista>Suguru Geto</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A007" estado="finalizado" tipo="TV">
+        <titulo>Dragon Ball</titulo>
+        <sinopsis>Goku, un niño con cola de mono y una fuerza extraordinaria, se embarca en una aventura para reunir las siete Esferas del Dragón, capaces de conceder cualquier deseo. En su camino entrena artes marciales, participa en torneos y protege la Tierra de villanos intergalácticos.</sinopsis>
+        <fechaPublicacion>1986-02-26</fechaPublicacion>
+        <fechaFin>1989-04-19</fechaFin>
+        <destacado>true</destacado>
+        <rating>8.5</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Aventura</genero>
+        </generos>
+        <temporadas total="1">
+            <temporada numero="1">
+                <episodios>153</episodios>
+                <fechaEstreno>1986-02-26</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Son Goku</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Bulma</coprotagonista>
+                <coprotagonista>Krillin</coprotagonista>
+                <coprotagonista>Maestro Roshi</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Piccolo Daimaku</antagonista>
+                <antagonista>Tao Pai Pai</antagonista>
+                <antagonista>Pilaf</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A008" estado="emision" tipo="TV">
+        <titulo>Fire Force</titulo>
+        <sinopsis>Tokio está plagada de demonios infernales, personas que estallan en llamas espontáneamente. La Fire Force, un cuerpo especial de bomberos, lucha contra los demonios. Shinra Kusakabe se une al escuadrón 8 para ser un héroe y descubrir la verdad detrás del incendio que mató a su familia.</sinopsis>
+        <fechaPublicacion>2019-07-06</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>7.7</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Ciencia Ficción</genero>
+        </generos>
+        <temporadas total="2">
+            <temporada numero="1">
+                <episodios>24</episodios>
+                <fechaEstreno>2019-07-06</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>24</episodios>
+                <fechaEstreno>2020-07-04</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Shinra Kusakabe</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Arthur Boyle</coprotagonista>
+                <coprotagonista>Maki Oze</coprotagonista>
+                <coprotagonista>Akitaru Obi</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>El Evangelista</antagonista>
+                <antagonista>Sho Kusakabe</antagonista>
+                <antagonista>Leonard Burns</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A009" estado="emision" tipo="TV">
+        <titulo>My Hero Academia</titulo>
+        <sinopsis>En un mundo donde el 80% de la población tiene poderes, Izuku Midoriya nace sin ellos pero sueña con ser un héroe. Tras heredar el poder del legendario All Might, ingresa en la academia U.A. para entrenar y enfrentarse a la Liga de Villanos que amenaza la paz.</sinopsis>
+        <fechaPublicacion>2016-04-03</fechaPublicacion>
+        <destacado>false</destacado>
+        <rating>8.2</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Superhéroes</genero>
+        </generos>
+        <temporadas total="7">
+            <temporada numero="1">
+                <episodios>13</episodios>
+                <fechaEstreno>2016-04-03</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>25</episodios>
+                <fechaEstreno>2017-04-01</fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios>25</episodios>
+                <fechaEstreno>2018-04-07</fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios>25</episodios>
+                <fechaEstreno>2019-10-12</fechaEstreno>
+            </temporada>
+            <temporada numero="5">
+                <episodios>25</episodios>
+                <fechaEstreno>2021-03-27</fechaEstreno>
+            </temporada>
+            <temporada numero="6">
+                <episodios>25</episodios>
+                <fechaEstreno>2022-10-01</fechaEstreno>
+            </temporada>
+            <temporada numero="7">
+                <episodios>21</episodios>
+                <fechaEstreno>2024-05-04</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Izuku Midoriya</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Katsuki Bakugo</coprotagonista>
+                <coprotagonista>Shoto Todoroki</coprotagonista>
+                <coprotagonista>Ochaco Uraraka</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Tomura Shigaraki</antagonista>
+                <antagonista>All For One</antagonista>
+                <antagonista>Dabi</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A010" estado="finalizado" tipo="TV">
+        <titulo>Haikyu!!</titulo>
+        <sinopsis>Hinata Shoyo, inspirado por el 'Pequeño Gigante', se une al equipo de voleibol de Karasuno. Allí debe aprender a colaborar con su rival, Kageyama Tobio. Juntos crean un ataque rápido imparable y buscan llevar a su equipo al campeonato nacional tras años de derrotas.</sinopsis>
+        <fechaPublicacion>2014-04-06</fechaPublicacion>
+        <fechaFin>2020-12-19</fechaFin>
+        <destacado>false</destacado>
+        <rating>8.7</rating>
+        <generos>
+            <genero>Deporte</genero>
+            <genero>Drama</genero>
+        </generos>
+        <temporadas total="4">
+            <temporada numero="1">
+                <episodios>25</episodios>
+                <fechaEstreno>2014-04-06</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>25</episodios>
+                <fechaEstreno>2015-10-04</fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios>10</episodios>
+                <fechaEstreno>2016-10-08</fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios>25</episodios>
+                <fechaEstreno>2020-01-11</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Shoyo Hinata</protagonista>
+                <protagonista>Tobio Kageyama</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Daichi Sawamura</coprotagonista>
+                <coprotagonista>Yu Nishinoya</coprotagonista>
+                <coprotagonista>Kei Tsukishima</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Oikawa Toru</antagonista>
+                <antagonista>Ushijima Wakatoshi</antagonista>
+                <antagonista>Atsumu Miya</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A011" estado="emision" tipo="TV">
+        <titulo>Los 4 jinetes del apocalipsis</titulo>
+        <sinopsis>Percival vive tranquilamente con su abuelo hasta que un caballero sagrado quema su hogar. Descubre que es uno de los Cuatro Jinetes del Apocalipsis, profetizados para destruir el mundo. Emprende un viaje para encontrar respuestas y reunirse con los otros jinetes.</sinopsis>
+        <fechaPublicacion>2023-10-08</fechaPublicacion>
+        <destacado>false</destacado>
+        <rating>7.5</rating>
+        <generos>
+            <genero>Aventura</genero>
+            <genero>Fantasía</genero>
+        </generos>
+        <temporadas total="2">
+            <temporada numero="1">
+                <episodios>24</episodios>
+                <fechaEstreno>2023-10-08</fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios>12</episodios>
+                <fechaEstreno>2024-10-06</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Percival</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Donny</coprotagonista>
+                <coprotagonista>Nasiens</coprotagonista>
+                <coprotagonista>Anne</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Arthur Pendragon</antagonista>
+                <antagonista>Ironside</antagonista>
+                <antagonista>Pellegarde</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A012" estado="emision" tipo="TV">
+        <titulo>Tragones y Mazmorras</titulo>
+        <sinopsis>Laios y su grupo deben rescatar a su hermana de un dragón en una mazmorra profunda. Sin dinero ni provisiones, deciden sobrevivir cocinando y comiendo a los monstruos que encuentran en el camino, descubriendo un ecosistema culinario fascinante y peligroso.</sinopsis>
+        <fechaPublicacion>2024-01-04</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>8.6</rating>
+        <generos>
+            <genero>Fantasía</genero>
+            <genero>Comedia</genero>
+            <genero>Gourmet</genero>
+        </generos>
+        <temporadas total="1">
+            <temporada numero="1">
+                <episodios>24</episodios>
+                <fechaEstreno>2024-01-04</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Laios Touden</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Marcille Donato</coprotagonista>
+                <coprotagonista>Chilchuck Tims</coprotagonista>
+                <coprotagonista>Senshi</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>El Hechicero Loco</antagonista>
+                <antagonista>Dragón Rojo</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A013" estado="emision" tipo="TV">
+        <titulo>Frieren</titulo>
+        <sinopsis>La maga elfa Frieren, tras derrotar al Rey Demonio junto al grupo del héroe, debe lidiar con su inmortalidad mientras ve envejecer y morir a sus amigos humanos. Emprende un nuevo viaje para comprender mejor a los humanos y despedirse de las almas de sus antiguos compañeros.</sinopsis>
+        <fechaPublicacion>2023-09-29</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>9.0</rating>
+        <generos>
+            <genero>Fantasía</genero>
+            <genero>Drama</genero>
+        </generos>
+        <temporadas total="1">
+            <temporada numero="1">
+                <episodios>28</episodios>
+                <fechaEstreno>2023-09-29</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Frieren</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Fern</coprotagonista>
+                <coprotagonista>Stark</coprotagonista>
+                <coprotagonista>Himmel</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Aura la Guillotina</antagonista>
+                <antagonista>Macht</antagonista>
+                <antagonista>Qual</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+    <anime id="A014" estado="emision" tipo="TV">
+        <titulo>Solo Leveling</titulo>
+        <sinopsis>En un mundo donde han aparecido portales a mazmorras, Sung Jin-woo es conocido como el cazador más débil. Tras sobrevivir a una mazmorra doble mortal, despierta con una interfaz de sistema similar a un videojuego que le permite subir de nivel infinitamente.</sinopsis>
+        <fechaPublicacion>2024-01-07</fechaPublicacion>
+        <destacado>true</destacado>
+        <rating>8.9</rating>
+        <generos>
+            <genero>Acción</genero>
+            <genero>Fantasía</genero>
+        </generos>
+        <temporadas total="1">
+            <temporada numero="1">
+                <episodios>12</episodios>
+                <fechaEstreno>2024-01-07</fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista>Sung Jin-woo</protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista>Cha Hae-in</coprotagonista>
+                <coprotagonista>Yoo Jinho</coprotagonista>
+                <coprotagonista>Go Gunhee</coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista>Antares</antagonista>
+                <antagonista>El Arquitecto</antagonista>
+                <antagonista>Hwang Dongsoo</antagonista>
+            </villanos>
+        </personajes>
+    </anime>
+
+</catalogoAnimes>
