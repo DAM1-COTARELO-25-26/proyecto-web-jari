@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogoAnimes SYSTEM "animes.dtd">
+<catalogoAnimes 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="animes.xsd"
+    fechaRegistro="2026-02-13">
+
+    <anime id="A001" estado="finalizado" tipo="TV">
+        <titulo></titulo>
+        <sinopsis></sinopsis>
+        <fechaPublicacion></fechaPublicacion>
+        <fechaFin></fechaFin>
+        <destacado></destacado>
+        <rating></rating>
+        <generos>
+            <genero></genero>
+            <genero></genero>
+            <genero></genero>
+        </generos>
+        <temporadas total="">
+            <temporada numero="1">
+                <episodios></episodios>
+                <fechaEstreno></fechaEstreno>
+            </temporada>
+            <temporada numero="2">
+                <episodios></episodios>
+                <fechaEstreno></fechaEstreno>
+            </temporada>
+            <temporada numero="3">
+                <episodios></episodios>
+                <fechaEstreno></fechaEstreno>
+            </temporada>
+            <temporada numero="4">
+                <episodios></episodios>
+                <fechaEstreno></fechaEstreno>
+            </temporada>
+            <temporada numero="5">
+                <episodios></episodios>
+                <fechaEstreno></fechaEstreno>
+            </temporada>
+        </temporadas>
+        <personajes>
+            <principales>
+                <protagonista></protagonista>
+            </principales>
+            <secundarios>
+                <coprotagonista></coprotagonista>
+                <coprotagonista></coprotagonista>
+                <coprotagonista></coprotagonista>
+            </secundarios>
+            <villanos>
+                <antagonista></antagonista>
+                <antagonista></antagonista>
+                <antagonista></antagonista>
+            </villanos>
+        </personajes>
+    </anime>
