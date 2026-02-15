@@ -1,27 +1,66 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/0esC98hF)
-Objetivo: El objetivo de la página web es hablar de distintos animes para dar información de cada uno y poder valorarlos.
+# JARI - Mundo Anime
 
-Contenidos:
-Tema: Que es el anime y explicación de diversos animes.
+Bienvenido a **JARI**, una plataforma web dedicada a la documentación y valoración del anime. Este proyecto se basa en dar información de cada anime en cada una de sus páginas web.
 
-Público Objetivo: La web sería para mayores de 16 años
+##Objetivo y Contenidos
 
-Paleta de colores y tipografía: Colores que más se van a usar -> Rojo (y variantes) Amarillo (y variantes) Naranja, Marrones y Verdes.
+El propósito es servir como una enciclopedia interactiva con dos enfoques:
+* **Exploración:** Una portada atractiva para descubrir nuevas series.
+* **Profundidad:** Fichas técnicas con sinopsis, tablas de episodios, listas de personajes y sistemas de valoración.
 
-La estructura inicial será: Página inicial hablando del anime en general que lleva con enlaces a otras páginas las cuales tiene los distintos animes para ser explicados y valorados individualmente, además de una página de contacto.
+> **Público Objetivo:** Usuarios **mayores de 16 años**, debido a la complejidad de las tramas y contenidos.
 
-Mapa de sitio:
+---
+
+##  Identidad Visual y Diseño (CSS)
+
+El proyecto mantiene una estética global (Dark Mode + Acentos Cálidos), pero implementa **dos layouts distintos** según la funcionalidad de la página.
+
+### 1. Estilos Globales (Comunes)
+* **Tipografía:** 'Poppins', sans-serif.
+* **Paleta de Colores:**
+    * 🔴 `#ff3c00` (Naranja Rojizo): Color principal de marca, títulos y bordes.
+    * 🟡 `#FFD700` (Dorado): Enlaces y destacados.
+    * ⚫ `#111111` / `#181818`: Fondos oscuros para reducir la fatiga visual.
+* **Navegación:** Menú lateral oculto (Sidebar) accesible mediante un botón de logo fijo (`.logo-button`) en la esquina superior izquierda.
+
+### 2. Layout de Portada (`index.html`)
+Diseño basado en el **patrón "Zig-Zag"**:
+* Secciones alternas (Imagen Izquierda / Imagen Derecha).
+*   Imágenes grandes y títulos llamativos.
+
+### 3. Layout de Ficha Técnica (`[anime].html`)
+Diseño tipo **"Dashboard"** estructurado para mostrar grandes cantidades de datos:
+* **Contenedor Principal (`.main-container`):** Posee un `padding-left: 110px` para acomodar el logo fijo sin superposiciones.
+* **Grilla Superior (`.top-section`):** División 2:1 entre la información (Sinopsis + Datos) y la imagen de portada.
+* **Tablas Estilizadas:** Cabeceras rojas (`thead`) y filas alternas para facilitar la lectura de episodios/temporadas.
+* **Distribución de Personajes (`.characters-grid`):** Distribución en 3 columnas (Principales, Secundarios, Villanos).
+* **Zona de Interacción:** Sección inferior con caja de comentarios y valoración por estrellas.
+
+---
+
+## Estructura del Sitio Web
+
+### Mapa del Sitio
+
+```text
 JARI (Sitio web)
 │
-├── index.html  (Inicio)
-│   ├─ Presentación del grupo
-│   ├─ Bienvenida
-│   ├─ Animes destacados (lista)
-│   └─ Sobre el anime (artículo)
+├── index.html  (Inicio - Diseño Zig-Zag)
+│   ├── Menú Lateral (Toggle)
+│   ├── Intro & Bienvenida
+│   ├── Listado Visual de Animes
+│   └── Footer
 │
-├── seccion.html  (Animes)
-│   ├─ Lista de animes populares (tabla)
-│   └─ Curiosidad sobre manga y anime (artículo)
+├── [nombre-anime].html  (Detalle - Diseño Dashboard)
+│   ├── Menú Lateral (Toggle)
+│   ├── Top Section:
+│   │   ├── Título & Sinopsis
+│   │   ├── Data Box (Estudio, Año, Género)
+│   │   └── Imagen Portada
+│   ├── Tablas de Datos (Temporadas/Episodios)
+│   ├── Grilla de Personajes (3 Columnas)
+│   ├── Sección de Comentarios & Rating
+│   └── Footer
 │
-└── contacto.html  (Contacto)
-    └─ Formulario de contacto
+└── contacto.html  (Formulario)
