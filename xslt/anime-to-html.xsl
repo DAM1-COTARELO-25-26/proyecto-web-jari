@@ -82,7 +82,25 @@
             </a>
             <div class="anime-info">
                 <h3><xsl:value-of select="titulo"/></h3>
-                <p><strong>Nota: </strong> <xsl:value-of select="rating"/> / 10</p>
+                    <p><strong>Nota: </strong>  
+                    <xsl:choose> 
+                        <xsl:when test="rating &gt;= 8.8"> 
+                            <span style="color: #FFD700; font-weight: bold; font-size: 1.1em;"> 
+                                <xsl:value-of select="rating"/> / 10        ¡Obra Maestra! 
+                            </span> 
+                        </xsl:when> 
+                        <xsl:when test="rating &gt;= 8.0"> 
+                            <span style="color: #4CAF50; font-weight: bold;"> 
+                                <xsl:value-of select="rating"/> / 10 
+                            </span> 
+                        </xsl:when> 
+                        <xsl:otherwise> 
+                            <span style="color: #FF9800; font-weight: bold;"> 
+                                <xsl:value-of select="rating"/> / 10 
+                            </span> 
+                        </xsl:otherwise> 
+                    </xsl:choose> 
+                </p>
                 <p><strong>Géneros: </strong> 
                     <xsl:for-each select="generos/genero">
                         <xsl:value-of select="."/>
