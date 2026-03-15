@@ -3,6 +3,8 @@
     
     <xsl:output method="html" encoding="UTF-8" indent="yes" doctype-system="about:legacy-compat"/>
 
+    <xsl:key name="agrupacionEstado" match="anime" use="@estado"/>
+
     <xsl:template match="/">
         <html lang="es">
         <head>
@@ -41,6 +43,20 @@
     </xsl:template>
 
     <xsl:template match="catalogoAnimes">
-        </xsl:template>
+        
+        <xsl:for-each select="anime[generate-id(.) = generate-id(key('agrupacionEstado', @estado))]">
+            
+            <section class="intro" style="margin-top: 40px; padding: 20px;">
+                <h2 style="text-transform: capitalize;">Animes en <xsl:value-of select="@estado"/></h2>
+            </section>
 
+            <xsl:for-each select="key('agrupacionEstado', @estado)">
+                
+                <xsl:sort select="rating" data-type="number" order="descending"/>
+                
+                <xsl:apply-templates select="."/>
+            </xsl:for-each>
+            
+        </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>
