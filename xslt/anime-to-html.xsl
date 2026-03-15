@@ -78,8 +78,17 @@
                     </xsl:for-each>
                 </p>
                 <p style="margin-top: 15px;"><xsl:value-of select="sinopsis"/></p>
+                
+                <div style="margin-top: 10px;">
+                    <p><strong>Total de temporadas: </strong> <xsl:value-of select="temporadas/@total"/></p>
+                    <p><strong>Protagonistas: </strong> 
+                        <xsl:for-each select="personajes/principales/protagonista">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()">, </xsl:if>
+                        </xsl:for-each>
+                    </p>
+                </div>
             </div>
         </article>
     </xsl:template>
-    
 </xsl:stylesheet>
