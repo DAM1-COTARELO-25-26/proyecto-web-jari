@@ -24,11 +24,23 @@
                 </div>
             </header>
 
-            <main>
-                <section class="intro">
-                    <h2>Nuestro Catálogo de Anime</h2>
-                    <p>Generado dinámicamente usando XML y XSLT</p>
-                </section>
+              <main> 
+                <section class="intro"> 
+                    <h2>Nuestro Catálogo de Anime</h2> 
+                    <p>Generado dinámicamente usando XML y XSLT</p> 
+ 
+                    <div style="background: #181818; border: 1px solid #333; padding: 15px; border
+                                radius: 8px; display: inline-block; margin-top: 15px;"> 
+                        <p style="margin: 0; color: #FFD700; font-size: 1.1rem;"> 
+                            <strong>Animes en la base de datos: </strong>  
+                            <xsl:value-of select="count(//anime)"/>  
+                            <span style="color: #555; margin: 0 10px;">|</span> 
+                            <strong>Nota media global: </strong>  
+                            <xsl:value-of select="round(sum(//anime/rating) div count(//anime))"/> / 10 
+                        </p> 
+                    </div> 
+ 
+                </section> 
 
                 <div id="contenedor-animes">
                     <xsl:apply-templates select="catalogoAnimes"/>
