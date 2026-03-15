@@ -59,4 +59,27 @@
             
         </xsl:for-each>
     </xsl:template>
+
+        <xsl:template match="anime">
+        <article class="anime-section">
+            <a href="#">
+                <img>
+                    <xsl:attribute name="src">../img/<xsl:value-of select="@id"/>.jpg</xsl:attribute>
+                    <xsl:attribute name="alt">Portada del anime <xsl:value-of select="titulo"/></xsl:attribute>
+                </img>
+            </a>
+            <div class="anime-info">
+                <h3><xsl:value-of select="titulo"/></h3>
+                <p><strong>Nota: </strong> <xsl:value-of select="rating"/> / 10</p>
+                <p><strong>Géneros: </strong> 
+                    <xsl:for-each select="generos/genero">
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position() != last()">, </xsl:if>
+                    </xsl:for-each>
+                </p>
+                <p style="margin-top: 15px;"><xsl:value-of select="sinopsis"/></p>
+            </div>
+        </article>
+    </xsl:template>
+    
 </xsl:stylesheet>
